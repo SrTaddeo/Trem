@@ -13,7 +13,7 @@ public class Gerador_Trilho : MonoBehaviour
         distanciaAtual += 1;
         PrxTrilho = SgmtTrilho;
 
-        /*
+     /*
          if(distanciaAtual == distanciaFinal) PrxTrilho = FimTrilho
         else PrxTrilho = SgmtTrilho;
         */

@@ -1,3 +1,4 @@
+using UnityEngine.InputSystem;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ public class manager : MonoBehaviour
     public float temp;
     public float ener;
     public float timer;
+    
+
 
     public void AddCarvao()
     {
@@ -22,20 +25,24 @@ public class manager : MonoBehaviour
     }
     public void SoltarCarvas()
     {
-        while (true) { ener--; }
 
+        ener = 0;
+
+        
     }
+
     public void Freios()
     {
 
-        velo = (velo * 10) - timer;
+      
+
 
     }
 
     public void LiberPress()
     {
 
-       press = (press - 10)  * timer;
+  
 
     }
 
@@ -72,7 +79,7 @@ public class manager : MonoBehaviour
 
         if ((press <= 10) && (temp <= 1))
         {
-            velo--;
+            velo = velo - 2f*timer;
             if (velo < 0) velo = 0;
         }
     }
@@ -86,6 +93,7 @@ public class manager : MonoBehaviour
         Temp.text = temp.ToString("0");
     }
 
+
     private void Start()
     {
 
@@ -93,6 +101,7 @@ public class manager : MonoBehaviour
 
     private void Update()
     {
+
         Recursos();
         EscreveRecursos();
     }

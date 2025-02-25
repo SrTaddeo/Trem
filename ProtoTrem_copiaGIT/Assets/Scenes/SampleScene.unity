@@ -1357,7 +1357,6 @@ GameObject:
   - component: {fileID: 1467780271}
   - component: {fileID: 1467780270}
   - component: {fileID: 1467780269}
-  - component: {fileID: 1467780272}
   m_Layer: 5
   m_Name: Freio
   m_TagString: Untagged
@@ -1467,35 +1466,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467780267}
   m_CullTransparentMesh: 1
---- !u!114 &1467780272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467780267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1860250222}
-          m_TargetAssemblyTypeName: manager, Assembly-CSharp
-          m_MethodName: Freios
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &1487096750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,7 +1712,6 @@ GameObject:
   - component: {fileID: 1566646772}
   - component: {fileID: 1566646771}
   - component: {fileID: 1566646770}
-  - component: {fileID: 1566646769}
   m_Layer: 5
   m_Name: SoltarCarvao
   m_TagString: Untagged
@@ -1770,35 +1739,6 @@ RectTransform:
   m_AnchoredPosition: {x: 574, y: -220}
   m_SizeDelta: {x: 249.3, y: 194.8}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1566646769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566646767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1860250222}
-          m_TargetAssemblyTypeName: manager, Assembly-CSharp
-          m_MethodName: SoltarCarvas
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &1566646770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1842,7 +1782,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1566646771}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1860250222}
+        m_TargetAssemblyTypeName: manager, Assembly-CSharp
+        m_MethodName: SoltarCarvas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1566646771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2295,9 +2247,9 @@ GameObject:
   - component: {fileID: 2089264618}
   - component: {fileID: 2089264617}
   - component: {fileID: 2089264616}
-  - component: {fileID: 2089264615}
+  - component: {fileID: 2089264619}
   m_Layer: 5
-  m_Name: liberaPress
+  m_Name: LiberaPress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2323,35 +2275,6 @@ RectTransform:
   m_AnchoredPosition: {x: -358, y: 81}
   m_SizeDelta: {x: 283.3, y: 58.07}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2089264615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089264613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1860250222}
-          m_TargetAssemblyTypeName: manager, Assembly-CSharp
-          m_MethodName: Freios
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &2089264616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2434,6 +2357,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089264613}
   m_CullTransparentMesh: 1
+--- !u!114 &2089264619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089264613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1001 &5639554708113552338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2442,14 +2378,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 529965839233071982, guid: 123d9ec62f2a3c64d90149e197bd0245, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2489443479824408504, guid: 123d9ec62f2a3c64d90149e197bd0245, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 2415242693014413205, guid: 123d9ec62f2a3c64d90149e197bd0245, type: 3}
+      propertyPath: mger
+      value: 
+      objectReference: {fileID: 1860250221}
     - target: {fileID: 4899318423940647138, guid: 123d9ec62f2a3c64d90149e197bd0245, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2493,30 +2425,6 @@ PrefabInstance:
     - target: {fileID: 5239428588007199320, guid: 123d9ec62f2a3c64d90149e197bd0245, type: 3}
       propertyPath: m_Name
       value: CHAO E TRILHO
-      objectReference: {fileID: 0}
-    - target: {fileID: 5763264844983508333, guid: 123d9ec62f2a3c64d90149e197bd0245, type: 3}
-      propertyPath: m_TagString
-      value: trigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 8614337926488085383, guid: 123d9ec62f2a3c64d90149e197bd0245, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1919.224
-      objectReference: {fileID: 0}
-    - target: {fileID: 8614337926488085383, guid: 123d9ec62f2a3c64d90149e197bd0245, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 115712.016
-      objectReference: {fileID: 0}
-    - target: {fileID: 8614337926488085383, guid: 123d9ec62f2a3c64d90149e197bd0245, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 14100.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 8614337926488085383, guid: 123d9ec62f2a3c64d90149e197bd0245, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8614337926488085383, guid: 123d9ec62f2a3c64d90149e197bd0245, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 262
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
